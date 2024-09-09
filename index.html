@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://t3.ftcdn.net/jpg/02/99/04/20/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg" alt="John Doe" class="profile-img">
+            <h1>Tayyab Ahmed</h1>
+            <p>Web Developer</p>
+            <button id="theme-toggle">Switch to Dark Mode</button>
+        </header>
+        
+        <section class="section">
+            <div class="section-header" onclick="toggleSection('experience')">
+                <h2>Experience</h2>
+                <button class="toggle-btn">+</button>
+            </div>
+            <div id="experience" class="section-content">
+                <div class="job">
+                    <h3>Senior Web Developer</h3>
+                    <p>Company Name | June 2020 - Present</p>
+                    <ul>
+                        <li>Lead development of web applications using modern frameworks.</li>
+                        <li>Mentored junior developers and conducted code reviews.</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h3>Web Developer</h3>
+                    <p>Another Company | Jan 2018 - May 2020</p>
+                    <ul>
+                        <li>Built and maintained company websites and applications.</li>
+                        <li>Collaborated with designers to create responsive layouts.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <div class="section-header" onclick="toggleSection('education')">
+                <h2>Education</h2>
+                <button class="toggle-btn">+</button>
+            </div>
+            <div id="education" class="section-content">
+                <div class="degree">
+                    <h3>Matric in Computer Science</h3>
+                    <p> Shamshad Grammer School | Complete: 2021</p>
+                    <h3>Intermediate in Computer Science</h3>
+                    <p> Govt Science and Commerce College | Complete: 2023</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <div class="section-header" onclick="toggleSection('skills')">
+                <h2>Skills</h2>
+                <button class="toggle-btn">+</button>
+            </div>
+            <div id="skills" class="section-content">
+                <ul>
+                    <li>JavaScript, HTML, CSS</li>
+                    <li>ReactJS, Node.js, TypeScript, NextJS</li>
+                    <li>Version Control (Git)</li>
+                    <li>Version Control (GitHub)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header" onclick="toggleSection('contact')">
+                <h2>Contact</h2>
+                <button class="toggle-btn">+</button>
+            </div>
+            <div id="contact" class="section-content">
+                <p>Email: tayyabahmed7561@gmail.com</p>
+                <p>Phone: +923122015997</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/tayyab-ahmed-a83700246/" target="_blank">tayyab-ahmed</a></p>
+            </div>
+        </section>
+        
+        <footer>
+            <p>© 2024 Tayyab Ahmed</p>
+        </footer>
+    </div>
+    
+    <script src="scripts.js"></script>
+
+</body>
+</html>
